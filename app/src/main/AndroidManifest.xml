@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.supportdesignlib.SupportDesignLibSample"/>
+        <activity android:name=".ui.supportdesignlib.SupportDesignActivity"/>
     </application>
 
 </manifest>
