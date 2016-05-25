@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import xfdingustc.omegasupreme.app.OmegaSupreme;
+import xfdingustc.omegasupreme.ui.supportdesignlib.SupportDesignLibSample;
 
 /**
  * Created by Xiaofei on 2016/5/24.
@@ -20,7 +21,7 @@ public class FunctionCategory implements Serializable {
 
         FunctionCategory category = new FunctionCategory();
         category.categoryName = "UI";
-        category.entries.add(new FunctionEntry("Android Support Design Library", R.drawable.android_default, R.string.android_support_design_library));
+        category.entries.add(new FunctionEntry("Android Support Design Library", R.drawable.android_default, R.string.android_support_design_library, SupportDesignLibSample.class));
 
         functionCategoryList.add(category);
         return functionCategoryList;

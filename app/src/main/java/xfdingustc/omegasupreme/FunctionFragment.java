@@ -1,5 +1,6 @@
 package xfdingustc.omegasupreme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -72,11 +74,18 @@ public class FunctionFragment extends BaseFragment {
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            FunctionEntry functionEntry = mCategory.entries.get(position);
+            final FunctionEntry functionEntry = mCategory.entries.get(position);
             FunctionEntryViewHolder viewHolder = (FunctionEntryViewHolder)holder;
             viewHolder.tvFuntionCover.setImageResource(functionEntry.drawRes);
             viewHolder.tvFuntionTitle.setText(functionEntry.entryName);
             viewHolder.tvFuntionDescription.setText(functionEntry.description);
+            viewHolder.functionEntry.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(), functionEntry.cls);
+                    getActivity().startActivity(intent);
+                }
+            });
         }
 
         @Override
@@ -87,6 +96,9 @@ public class FunctionFragment extends BaseFragment {
     }
 
     public static class FunctionEntryViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.function_entry)
+        LinearLayout functionEntry;
 
         @BindView(R.id.tv_function_cover)
         ImageView tvFuntionCover;
