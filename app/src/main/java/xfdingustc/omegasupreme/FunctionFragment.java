@@ -90,7 +90,6 @@ public class FunctionFragment extends BaseFragment {
 
         @Override
         public int getItemCount() {
-            Log.i("test", "" + mCategory.entries.size());
             return mCategory.entries.size();
         }
     }

@@ -2,26 +2,37 @@ package xfdingustc.omegasupreme.ui.supportdesignlib;
 
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import butterknife.BindView;
 import xfdingustc.omegasupreme.BaseActivity;
 import xfdingustc.omegasupreme.R;
+import xfdingustc.omegasupreme.SimpleFragmentPagerAdapter;
 
 /**
  * Created by Xiaofei on 2016/5/25.
  */
-public class SupportDesignActivity extends BaseActivity{
+public class SupportDesignActivity extends BaseActivity {
 
     @BindView(R.id.drawer_layout)
     DrawerLayout drawerLayout;
 
     @BindView(R.id.nav_view)
     NavigationView navigationView;
+
+    @BindView(R.id.viewpager)
+    ViewPager viewPager;
+
+    @BindView(R.id.tabs)
+    TabLayout tabLayout;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,11 +49,25 @@ public class SupportDesignActivity extends BaseActivity{
         setSupportActionBar(getToolbar());
 
         ActionBar actionBar = getSupportActionBar();
-//        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         setupDrawerContent(navigationView);
 
+        setupViewPager();
+
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -61,5 +86,12 @@ public class SupportDesignActivity extends BaseActivity{
                     return true;
                 }
             });
+    }
+
+    private void setupViewPager() {
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(SupportDesignFragment.newInstance(), "Category 1");
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
     }
 }
