@@ -7,7 +7,7 @@
 
 ### 编程语言
 - C
-  - 宏
-  - 字符串
+  - [宏](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/C/macro.md)
+  - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/C/string.md)
 - C++
 - Java
