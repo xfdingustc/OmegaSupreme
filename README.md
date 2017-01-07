@@ -7,7 +7,8 @@
 
 ### 编程语言
 - C
-  - [宏](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/C/macro.md)
-  - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/C/string.md)
+  - [宏](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Macro.md)
+  - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/String.md)
 - C++
+  - [继承](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Inherit.md)
 - Java
