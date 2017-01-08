@@ -16,3 +16,5 @@
   - [继承](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Inherit.md)
   - [重载](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Overload.md)
 - Java
+- 数据结构
+  - [栈](https://github.com/xfdingustc/OmegaSupreme/blob/master/datastructure/Stack.md)
