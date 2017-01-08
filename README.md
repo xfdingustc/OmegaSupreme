@@ -7,10 +7,11 @@
 
 ### 编程语言
 - C
+  - [数组](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Array.md)
   - [宏](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Macro.md)
   - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/String.md)
   - [结构体](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Struct.md)
-  - [指针](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Point.md) 
+  - [指针](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Point.md)
 - C++
   - [继承](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Inherit.md)
   - [重载](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Overload.md)
