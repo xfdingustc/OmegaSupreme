@@ -55,3 +55,30 @@ t ＝ ﹡p;
 又执行下一步赋值语句，将此时p指向的值赋值给q指向的值
 ﹡q ＝ ﹡p;
 将9赋值给*q，所以两个都是9
+
+###
+下面一段代码的输出结果是
+``` C
+void f( char* c, char d ){
+  *c = *c + 1;
+  d = d + 1;
+  cout<< *c << d;
+}
+void main() {
+  char a = 'A' , b = 'a';
+  f(&b,a);
+  cout<<a<<b<<endl;
+}
+```
+
+```
+A. BaBa
+B. aBaB
+C. AbAb
+D. bBAb
+```
+
+**答案：D**
+
+f(&b,a)中打印 "bB"
+cout<<a<<b<<endl;打印"Ab"，因为 f函数 通过指针改变了b的值，但是a只是作为d的一个副本并没有改变。

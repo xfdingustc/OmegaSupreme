@@ -8,6 +8,7 @@
 ### 编程语言
 - C
   - [语法](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Grammar.md)
+  - [函数](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Function.md)
   - [数组](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Array.md)
   - [宏](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Macro.md)
   - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/String.md)
