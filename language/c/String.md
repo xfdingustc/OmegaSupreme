@@ -57,8 +57,8 @@ E. 越界
 **答案： D**
 
 str，ite1,ite2指向的内存为同一块内存，初始化时，都指向“abcdcccd”,循环进行：
-1）ite1指向内存第一个位置a,ite2指向a,所以ite指向内容修改为a,str指向abcdcccd，ite1,ite2右移
-2) ite1指向内存第二个位置b,ite2指向b,所以ite指向内容修改为b,str指向abcdcccd，ite1,ite2右移
-3)ite1指向内存第三个位置c，ite2指向c等于ch继续右移指向d,所以ite指向内容修改为d，str指向adddcccd，ite1,ite2右移
-4)ite1指向内存第四个位置d,ite2指向c等于ch继续右移直到指向d，所以ite指向内容修改为d，str指向abddcccd，ite1,ite2右移
-5）退出
+1. ite1指向内存第一个位置a,ite2指向a,所以ite指向内容修改为a,str指向abcdcccd，ite1,ite2右移
+2. ite1指向内存第二个位置b,ite2指向b,所以ite指向内容修改为b,str指向abcdcccd，ite1,ite2右移
+3. ite1指向内存第三个位置c，ite2指向c等于ch继续右移指向d,所以ite指向内容修改为d，str指向adddcccd，ite1,ite2右移
+4. ite1指向内存第四个位置d,ite2指向c等于ch继续右移直到指向d，所以ite指向内容修改为d，str指向abddcccd，ite1,ite2右移
+5. 退出
