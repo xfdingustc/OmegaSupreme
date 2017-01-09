@@ -7,6 +7,7 @@
 
 ### 编程语言
 - C
+  - [关键词](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Keyword.md)
   - [语法](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Grammar.md)
   - [函数](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Function.md)
   - [数组](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Array.md)
@@ -14,6 +15,7 @@
   - [字符串](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/String.md)
   - [结构体](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Struct.md)
   - [指针](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Point.md)
+  - [递归](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Recursion.md)
 - C++
   - [类](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Class.md)
   - [继承](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Inherit.md)

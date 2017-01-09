@@ -21,7 +21,7 @@ D. 7
 ``` C
 A. #define N 2008
    int num[N];
-B. int N=2008;
+B. int N = 2008;
 C. int num[0..2008];
 D. int num[];
 ```
