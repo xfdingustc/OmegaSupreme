@@ -126,3 +126,35 @@ D. 8
 32位系统，B继承A，包含一个int变量，同时自己里面有个虚函数指针，指向虚表；
 64位系统，int还是4个字节，但是指针为8个直接，为了字节对齐所以占用16个字节
 ***
+
+写出下面代码的运行结果是（）
+``` CPP
+class AA {
+public:
+  int a;
+  static int b;
+  AA() {
+    a = 1;
+    add2();
+  }
+  int add1() {
+    a = a + 1;
+    return a;
+  }
+  int add2() {
+    b = b + 1;
+    return b;
+  }
+};
+
+int AA::b = 1;
+int main() {
+  AA a1;
+  a1.add1();
+  a1.add2();
+  assert(a1.a < a1.b);
+  printf("%d,%d", a1.a, a1.b);
+  return 0;
+}
+```
+**答案：A**
