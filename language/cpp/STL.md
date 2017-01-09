@@ -1,4 +1,19 @@
 ***
+``` CPP
+std::vector::iterator
+```
+没有重载下面哪个运算符
+```
+A. ==
+B. ++
+C. *
+D. >>
+```
+**答案: D**
+
+迭代器可以看成一个指针，指针没有移位运算
+
+***
 STL中的unordered_map和priority_queue使用的底层数据结构分别是什么?()
 ```
 A. rbtree,queue

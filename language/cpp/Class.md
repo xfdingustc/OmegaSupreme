@@ -168,3 +168,27 @@ C. 构造函数可以是内联函数
 D. 构造函数不可以重载
 ```
 **答案：D**
+
+***
+假定Qiniuome是一个类，执行下面这些语句之后，内存里创建了几个Qiniuome对象。
+``` CPP
+Qiniuome a();
+Qiniuome b(2);
+Qiniuome c[3];
+Qiniuome &ra = b;
+Qiniuome *pA = c;
+Qiniuome *p = new Qiniuome(4);
+```
+```
+A. 5
+B. 6
+C. 7
+D. 8
+```
+
+**答案：A**
+
+Qiniuome a();是函数声明.
+Qiniuome b(2)和 Qiniuome c[3]创建总共4个;
+Qiniuome &ra = b和 Qiniuome *pA = c是指针和引用,不会创建对象
+Qiniuome *p = new Qiniuome (4);会创建一个

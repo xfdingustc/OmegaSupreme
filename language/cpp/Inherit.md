@@ -44,3 +44,25 @@ D. 都是虚函数
   - 如果派生类的函数与基类的函数同名，并且参数也相同，但是基类函数没有virtual 关键字。此时，基类的函数被隐藏（注意别与覆盖混淆）
 
 ***
+
+以下代码的运行结果为：
+``` CPP
+class Base {
+public:
+  Base() {echo();}
+  virtual void echo() {printf(“Base”);}
+};
+
+class Derived : public Base {
+public:
+  Derived() {echo();}
+  virtual void echo() {printf(“Derived”);}
+};
+
+int main() {
+  Base* base = new Derived();
+  base->echo();
+  return 0;
+}
+```
+**答案： D**
