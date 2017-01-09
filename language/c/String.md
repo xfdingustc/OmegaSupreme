@@ -82,3 +82,19 @@ str，ite1,ite2指向的内存为同一块内存，初始化时，都指向“ab
 3. ite1指向内存第三个位置c，ite2指向c等于ch继续右移指向d,所以ite指向内容修改为d，str指向adddcccd，ite1,ite2右移
 4. ite1指向内存第四个位置d,ite2指向c等于ch继续右移直到指向d，所以ite指向内容修改为d，str指向abddcccd，ite1,ite2右移
 5. 退出
+
+***
+下面程序的输出是：（）
+``` C
+char s[] = "Welcometohengtian";
+printf("%s%d",s + 7,sizeof(s));
+```
+
+```
+A. Welcometohengtian17
+B. tohengtian18
+C. tohengtian17
+D. Welcometohengtian18
+```
+
+**答案： B**
