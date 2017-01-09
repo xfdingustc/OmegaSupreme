@@ -13,6 +13,7 @@
   - [结构体](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Struct.md)
   - [指针](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/c/Point.md)
 - C++
+  - [类](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Class.md)
   - [继承](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Inherit.md)
   - [重载](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Overload.md)
 - Java
