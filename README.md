@@ -20,4 +20,5 @@
   - [重载](https://github.com/xfdingustc/OmegaSupreme/blob/master/language/cpp/Overload.md)
 - Java
 - 数据结构
+  - [链表](https://github.com/xfdingustc/OmegaSupreme/blob/master/datastructure/List.md)
   - [栈](https://github.com/xfdingustc/OmegaSupreme/blob/master/datastructure/Stack.md)
